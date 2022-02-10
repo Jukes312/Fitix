@@ -1,0 +1,29 @@
+$font-body: "Roboto", sans-serif;
+$font-heading: "Poppins", sans-serif;
+%heading-shared {
+  font-family: $font-heading;
+  color: $Color-body;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+body {
+  font-family: $font-body;
+  color: $Color-body;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h1 {
+  @extend %heading-shared;
+  font-size: 7.2rem;
+}
+
+h2 {
+  @extend %heading-shared;
+  font-size: 5.5rem;
+}
+h3 {
+  @extend %heading-shared;
+  font-size: 4.5rem;
+}

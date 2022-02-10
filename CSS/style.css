@@ -8,4 +8,30 @@ html {
   font-size: 62.5%;
 }
 
+h3, h2, h1 {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 7.2rem;
+}
+
+h2 {
+  font-size: 5.5rem;
+}
+
+h3 {
+  font-size: 4.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
