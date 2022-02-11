@@ -1,4 +1,32 @@
-@import "Default";
 @import "Colorpalette";
 @import "Typography";
+@import "Default";
 @import "Mobile";
+
+/*buttons*/
+%button-shared {
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  margin: 1rem 0;
+  padding: 2rem 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  outline: 0;
+  background-color: $Color-secondery;
+  color: $Color-body;
+  font-size: 3rem;
+}
+
+button {
+  @extend %button-shared;
+}
+.btn {
+  @extend %button-shared;
+}
+
+.btn--stretched {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
