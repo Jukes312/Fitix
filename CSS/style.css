@@ -1,37 +1,17 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+/* Error: expected more input.
+ *    ,
+ * 72 | /*
+ *    |   ^
+ *    '
+ *   SCSS\style.scss 72:3  root stylesheet */
 
-html {
-  font-size: 62.5%;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: expected more input.\a    \2577 \a 72 \2502  /*\d\a    \2502    ^\a    \2575 \a   SCSS\\style.scss 72:3  root stylesheet";
 }
-
-h3, h2, h1 {
-  font-family: "Poppins", sans-serif;
-  color: #ffffff;
-  margin-bottom: 1rem;
-  line-height: 1.1;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  color: #ffffff;
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-h1 {
-  font-size: 7.2rem;
-}
-
-h2 {
-  font-size: 5.5rem;
-}
-
-h3 {
-  font-size: 4.5rem;
-}
-
-/*# sourceMappingURL=style.css.map */
