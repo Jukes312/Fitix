@@ -19,9 +19,6 @@
   font-size: 3rem;
 }
 
-button {
-  @extend %button-shared;
-}
 .btn {
   @extend %button-shared;
 }
@@ -29,4 +26,46 @@ button {
 .btn--stretched {
   padding-left: 8rem;
   padding-right: 8rem;
+}
+/*Input*/
+
+%input-shared {
+  font-size: 3rem;
+  padding: 1rem 0;
+  font-family: $font-body;
+  font-weight: 300;
+  border-color: $Color-body;
+  background-color: transparent;
+  color: $Color-body;
+  outline: 0;
+  border-radius: 10px;
+}
+
+.input {
+  @extend %input-shared;
+}
+
+.input-group {
+  border: 1px solid $Color-body;
+  border-color: white;
+  border-radius: 5rem;
+  display: flex;
+  width: fit-content;
+  overflow: hidden;
+  .input-group-input {
+    border: 0;
+    flex-grow: 1;
+  }
+  button {
+    background-color: $Color-primary;
+    border: 0;
+    padding: 0.6rem;
+    cursor: pointer;
+  }
+  img {
+    margin: 0;
+    background-color: $Color-secondery;
+    border-radius: 5rem;
+    padding: 10px;
+  }
 }
