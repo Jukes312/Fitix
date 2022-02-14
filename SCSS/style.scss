@@ -1,6 +1,6 @@
+@import "Default";
 @import "Colorpalette";
 @import "Typography";
-@import "Default";
 @import "Mobile";
 
 /*buttons*/
@@ -68,4 +68,14 @@
     border-radius: 5rem;
     padding: 10px;
   }
+}
+
+/*Transparent-blocks*/
+@function transparent($transPercentage) {
+  @return rgba(15, 14, 14, $transPercentage);
+}
+
+.transparent-block {
+  background-color: transparent(50%);
+  height: 100px;
 }

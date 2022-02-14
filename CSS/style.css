@@ -1,17 +1,106 @@
-/* Error: expected more input.
- *    ,
- * 72 | /*
- *    |   ^
- *    '
- *   SCSS\style.scss 72:3  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected more input.\a    \2577 \a 72 \2502  /*\d\a    \2502    ^\a    \2575 \a   SCSS\\style.scss 72:3  root stylesheet";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3, h2, h1 {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 7.2rem;
+}
+
+h2 {
+  font-size: 5.5rem;
+}
+
+h3 {
+  font-size: 4.5rem;
+}
+
+/*buttons*/
+.btn {
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  margin: 1rem 0;
+  padding: 2rem 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  outline: 0;
+  background-color: #0d86ca;
+  color: #ffffff;
+  font-size: 3rem;
+}
+
+.btn--stretched {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+/*Input*/
+.input {
+  font-size: 3rem;
+  padding: 1rem 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  border-color: #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  outline: 0;
+  border-radius: 10px;
+}
+
+.input-group {
+  border: 1px solid #ffffff;
+  border-color: white;
+  border-radius: 5rem;
+  display: flex;
+  width: fit-content;
+  overflow: hidden;
+}
+.input-group .input-group-input {
+  border: 0;
+  flex-grow: 1;
+}
+.input-group button {
+  background-color: black;
+  border: 0;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+.input-group img {
+  margin: 0;
+  background-color: #0d86ca;
+  border-radius: 5rem;
+  padding: 10px;
+}
+
+/*Transparent-blocks*/
+.transparent-block {
+  background-color: rgba(15, 14, 14, 0.5);
+  height: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */
