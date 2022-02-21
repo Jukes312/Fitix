@@ -1,0 +1,29 @@
+<section class="Local-gym-block grid">
+  <article>
+    <div class="Local-gym-block__content">
+      <h2>FIND YOUR LOCAL GYM</h2>
+      <div class="input-group">
+        <input
+          id="address"
+          type="text"
+          class="input input-group-input"
+          placeholder="Search postcode..."
+        />
+        <button id="inputLocation">
+          <img src="/Img/Search.svg" alt="" />
+        </button>
+      </div>
+      <p>Or</p>
+      <button class="btn" id="myLocation">
+        <img class="loctation-icon" src="/Img/Location.svg" />
+        USE MY LOCATION
+      </button>
+    </div>
+  </article>
+  <article id="map"></article>
+</section>
+<script type="module" src="/JS/main.js"></script>
+<script
+  defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRu-uSaJtJe1J2KPAvkYX6bHoMAYaVVks&libraries=places&callback=initMap"
+></script>

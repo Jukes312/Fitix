@@ -12,6 +12,11 @@ a {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 h3, h2, h1 {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
@@ -24,6 +29,7 @@ body {
   color: #ffffff;
   font-size: 3rem;
   line-height: 1.5;
+  margin: 0;
 }
 
 h1 {
@@ -36,6 +42,11 @@ h2 {
 
 h3 {
   font-size: 4.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /*buttons*/
@@ -101,6 +112,35 @@ h3 {
 .transparent-block {
   background-color: rgba(15, 14, 14, 0.5);
   height: 100px;
+}
+
+/*Local-gym-block*/
+.Local-gym-block {
+  background-color: black;
+}
+
+.Local-gym-block__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.Local-gym-block__content h2 {
+  margin-bottom: 3rem;
+}
+.Local-gym-block__content p {
+  margin: 1rem 0;
+}
+.Local-gym-block__content button {
+  display: flex;
+  align-items: center;
+}
+.Local-gym-block__content button .loctation-icon {
+  margin-right: 2rem;
+}
+
+#map {
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -79,3 +79,31 @@
   background-color: transparent(50%);
   height: 100px;
 }
+/*Local-gym-block*/
+.Local-gym-block {
+  background-color: $Color-primary;
+}
+
+.Local-gym-block__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  h2 {
+    margin-bottom: 3rem;
+  }
+  p {
+    margin: 1rem 0;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    .loctation-icon {
+      margin-right: 2rem;
+    }
+  }
+}
+
+#map {
+  height: 100%;
+}
