@@ -75,10 +75,6 @@
   @return rgba(15, 14, 14, $transPercentage);
 }
 
-.transparent-block {
-  background-color: transparent(50%);
-  height: 100px;
-}
 /*Local-gym-block*/
 .Local-gym-block {
   background-color: $Color-primary;
@@ -106,4 +102,31 @@
 
 #map {
   height: 100%;
+}
+
+/*Nav-block*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+  align-items: center;
+  background-color: transparent(70%);
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 2rem 0rem;
+  }
+
+  li {
+    padding: 0rem 2rem;
+  }
+  a {
+    color: $Color-body;
+    font-size: 1.6rem;
+    transition: color 0.5s;
+    &:hover {
+      color: $Color-secondery;
+    }
+  }
 }

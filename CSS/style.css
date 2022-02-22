@@ -109,11 +109,6 @@ h3 {
 }
 
 /*Transparent-blocks*/
-.transparent-block {
-  background-color: rgba(15, 14, 14, 0.5);
-  height: 100px;
-}
-
 /*Local-gym-block*/
 .Local-gym-block {
   background-color: black;
@@ -141,6 +136,32 @@ h3 {
 
 #map {
   height: 100%;
+}
+
+/*Nav-block*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+  align-items: center;
+  background-color: rgba(15, 14, 14, 0.7);
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 2rem 0rem;
+}
+nav li {
+  padding: 0rem 2rem;
+}
+nav a {
+  color: #ffffff;
+  font-size: 1.6rem;
+  transition: color 0.5s;
+}
+nav a:hover {
+  color: #0d86ca;
 }
 
 /*# sourceMappingURL=style.css.map */
