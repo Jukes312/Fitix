@@ -164,4 +164,30 @@ nav a:hover {
   color: #0d86ca;
 }
 
+/*Nav-and-hero-block*/
+section {
+  background-image: url("/Img/man-g4ed3e5c37_1920.jpg");
+}
+section .hero {
+  height: 100vh;
+}
+section .hero div {
+  height: 100%;
+  width: 50vw;
+  background-color: rgba(15, 14, 14, 0.5);
+  position: relative;
+}
+section .hero div div {
+  height: fit-content;
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  padding: 0 2rem;
+}
+section .hero div div p {
+  font-weight: 100;
+}
+
 /*# sourceMappingURL=style.css.map */
