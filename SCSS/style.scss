@@ -101,7 +101,7 @@
 }
 
 #map {
-  height: 100%;
+  height: 100vh;
 }
 
 /*Nav-block*/
@@ -132,7 +132,7 @@ nav {
 }
 
 /*Nav-and-hero-block*/
-section {
+.Nav-and-hero-block {
   background-image: url("/Img/man-g4ed3e5c37_1920.jpg");
 
   .hero {
@@ -159,4 +159,58 @@ section {
       }
     }
   }
+}
+
+/*Calorie-tracker-block*/
+.calorie-calculater-block {
+  background-color: $Color-primary;
+}
+.Carlorie-tracker {
+  padding: 1rem;
+  .calorie-calculater {
+    text-align: center;
+    width: 50%;
+    padding: 7rem;
+    margin: 0 auto;
+    background-color: transparent(80%);
+    overflow: hidden;
+
+    h3 {
+      margin-top: 0;
+      padding-bottom: 2rem;
+    }
+
+    label {
+      margin-right: 1rem;
+    }
+
+    input {
+      margin-bottom: 2rem;
+    }
+
+    button {
+      width: fit-content;
+      align-self: center;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+    select {
+      padding: 0.5rem;
+      background-color: $Color-secondery;
+      color: $Color-body;
+      height: 5rem;
+    }
+    div {
+      border: solid 0.3rem $Color-secondery;
+      p {
+        margin-top: 1rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.calorie-img {
+  background-image: url(/Img/training-g31cb64642_1920.jpg);
+
+  height: 100%;
 }

@@ -1,5 +1,8 @@
-import  MappEvents from '/JS/Event.js'
+import  MappEvents,{CalorieEvents} from '/JS/Event.js'
 let mapEvent = new MappEvents();
+let calorieEvents = new CalorieEvents();
+
+
 
 
 

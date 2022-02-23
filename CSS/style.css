@@ -135,7 +135,7 @@ h3 {
 }
 
 #map {
-  height: 100%;
+  height: 100vh;
 }
 
 /*Nav-block*/
@@ -165,19 +165,19 @@ nav a:hover {
 }
 
 /*Nav-and-hero-block*/
-section {
+.Nav-and-hero-block {
   background-image: url("/Img/man-g4ed3e5c37_1920.jpg");
 }
-section .hero {
+.Nav-and-hero-block .hero {
   height: 100vh;
 }
-section .hero div {
+.Nav-and-hero-block .hero div {
   height: 100%;
   width: 50vw;
   background-color: rgba(15, 14, 14, 0.5);
   position: relative;
 }
-section .hero div div {
+.Nav-and-hero-block .hero div div {
   height: fit-content;
   width: 80%;
   margin: auto;
@@ -186,8 +186,59 @@ section .hero div div {
   left: 15%;
   padding: 0 2rem;
 }
-section .hero div div p {
+.Nav-and-hero-block .hero div div p {
   font-weight: 100;
+}
+
+/*Calorie-tracker-block*/
+.calorie-calculater-block {
+  background-color: black;
+}
+
+.Carlorie-tracker {
+  padding: 1rem;
+}
+.Carlorie-tracker .calorie-calculater {
+  text-align: center;
+  width: 50%;
+  padding: 7rem;
+  margin: 0 auto;
+  background-color: rgba(15, 14, 14, 0.8);
+  overflow: hidden;
+}
+.Carlorie-tracker .calorie-calculater h3 {
+  margin-top: 0;
+  padding-bottom: 2rem;
+}
+.Carlorie-tracker .calorie-calculater label {
+  margin-right: 1rem;
+}
+.Carlorie-tracker .calorie-calculater input {
+  margin-bottom: 2rem;
+}
+.Carlorie-tracker .calorie-calculater button {
+  width: fit-content;
+  align-self: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.Carlorie-tracker .calorie-calculater select {
+  padding: 0.5rem;
+  background-color: #0d86ca;
+  color: #ffffff;
+  height: 5rem;
+}
+.Carlorie-tracker .calorie-calculater div {
+  border: solid 0.3rem #0d86ca;
+}
+.Carlorie-tracker .calorie-calculater div p {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.calorie-img {
+  background-image: url(/Img/training-g31cb64642_1920.jpg);
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
