@@ -13,6 +13,7 @@ export default class Mapp{
      
            this.service = new google.maps.places.PlacesService(map);
            this.geocoder = new google.maps.Geocoder();    
+           
      }
     
     }
@@ -56,6 +57,9 @@ export default class Mapp{
                   map: map,
                   icon: './Img/Location-logo.svg',
                 });
+                google.maps.event.addListener(marker,'click',function(){
+                    console.log(results[i].name)
+                })
              }
           }
          });

@@ -227,7 +227,37 @@ nav {
   }
 
   .membership-block__heading {
-    background-color: $Color-secondery;
+    background-color: $Color-primary;
     box-shadow: 10px 10px white;
+    color: $Color-body;
+  }
+}
+/*Footer*/
+footer {
+  padding: 5rem;
+  background-color: $Color-primary;
+
+  .footer__logo {
+    text-align: center;
+    padding-right: 5rem;
+  }
+
+  h5 {
+    font-family: $font-heading;
+    font-size: 3.6rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  a {
+    color: gray;
+    &:hover {
+      color: $Color-secondery;
+    }
   }
 }
