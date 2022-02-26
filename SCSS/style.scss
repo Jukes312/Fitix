@@ -1,7 +1,6 @@
 @import "Default";
 @import "Colorpalette";
 @import "Typography";
-@import "Mobile";
 
 /*buttons*/
 %button-shared {
@@ -105,21 +104,25 @@
 }
 
 /*Nav-block*/
-nav {
+.nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 2rem;
+  padding: 0 0;
   align-items: center;
   background-color: transparent(70%);
+
+  .nav__icon {
+    display: none;
+    position: absolute;
+  }
   ul {
     display: flex;
     list-style: none;
-    margin: 2rem 0rem;
   }
 
   li {
-    padding: 0rem 2rem;
+    padding-right: 2rem;
   }
   a {
     color: $Color-body;
@@ -134,17 +137,20 @@ nav {
 /*Nav-and-hero-block*/
 .Nav-and-hero-block {
   background-image: url("/Img/man-g4ed3e5c37_1920.jpg");
+  overflow: hidden;
 
   .hero {
     height: 100vh;
+    overflow: hidden;
 
-    div {
-      height: 100%;
+    .hero__trasparent-block {
+      height: 100vh;
       width: 50vw;
       background-color: transparent(50%);
       position: relative;
+      overflow: hidden;
 
-      div {
+      .hero__content {
         height: fit-content;
         width: 80%;
         margin: auto;
@@ -261,3 +267,5 @@ footer {
     }
   }
 }
+
+@import "Mobile";
