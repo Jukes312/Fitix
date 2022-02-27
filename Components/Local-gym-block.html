@@ -1,26 +1,24 @@
-<section class="Local-gym-block grid">
-  <article>
-    <div class="Local-gym-block__content">
-      <h2>FIND YOUR LOCAL GYM</h2>
-      <div class="input-group">
-        <input
-          id="address"
-          type="text"
-          class="input input-group-input"
-          placeholder="Search postcode..."
-        />
-        <button id="inputLocation">
-          <img src="/Img/Search.svg" alt="" />
-        </button>
-      </div>
-      <p>Or</p>
-      <button class="btn" id="myLocation">
-        <img class="loctation-icon" src="/Img/Location.svg" />
-        USE MY LOCATION
+<section class="Local-gym-block grid grid--1x2">
+  <div class="Local-gym-block__content">
+    <h2>FIND YOUR LOCAL GYM</h2>
+    <div class="input-group">
+      <input
+        id="address"
+        type="text"
+        class="input input-group-input"
+        placeholder="Search postcode..."
+      />
+      <button id="inputLocation">
+        <img src="/Img/Search.svg" alt="" />
       </button>
     </div>
-  </article>
-  <article id="map"></article>
+    <p>Or</p>
+    <button class="btn" id="myLocation">
+      <img class="loctation-icon" src="/Img/Location.svg" />
+      USE MY LOCATION
+    </button>
+  </div>
+  <div id="map"></div>
 </section>
 <script type="module" src="/JS/main.js"></script>
 <script

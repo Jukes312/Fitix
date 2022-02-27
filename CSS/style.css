@@ -128,6 +128,12 @@ h3 {
 .Local-gym-block__content button .loctation-icon {
   margin-right: 2rem;
 }
+.Local-gym-block__content ::placeholder {
+  font-size: 2rem;
+}
+.Local-gym-block__content .btn {
+  font-size: 2.5rem;
+}
 
 #map {
   height: 100vh;
@@ -292,10 +298,15 @@ footer a:hover {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .grid--1x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--1x4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -343,6 +354,34 @@ footer a:hover {
   }
   .Nav-and-hero-block .hero .hero__trasparent-block .hero__content h1 {
     font-size: 6.5rem;
+  }
+}
+/*Local-gym-block*/
+@media screen and (max-width: 700px) {
+  .Local-gym-block {
+    overflow: hidden;
+  }
+
+  .Local-gym-block__content {
+    max-width: 370px;
+    margin: 0 auto;
+  }
+  .Local-gym-block__content .input-group {
+    max-width: inherit;
+  }
+  .Local-gym-block__content .input-group .input-group-input {
+    width: 40vw;
+  }
+  .Local-gym-block__content .input-group ::placeholder {
+    font-size: 1.6rem;
+  }
+  .Local-gym-block__content .btn {
+    width: 90%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
