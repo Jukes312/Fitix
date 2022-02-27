@@ -203,52 +203,56 @@ h3 {
 /*Calorie-tracker-block*/
 .calorie-calculater-block {
   background-color: black;
+  height: fit-content;
+  background-color: black;
 }
 
-.Carlorie-tracker {
+.calorie-calculater-block__tracker {
   padding: 1rem;
+  overflow: hidden;
+  height: fit-content;
 }
-.Carlorie-tracker .calorie-calculater {
+.calorie-calculater-block__tracker .calorie-calculater-block__calculater {
   text-align: center;
-  width: 50%;
+  width: 90%;
   padding: 7rem;
   margin: 0 auto;
   background-color: rgba(15, 14, 14, 0.8);
   overflow: hidden;
 }
-.Carlorie-tracker .calorie-calculater h3 {
+.calorie-calculater-block__tracker .calorie-calculater-block__calculater h3 {
   margin-top: 0;
   padding-bottom: 2rem;
 }
-.Carlorie-tracker .calorie-calculater label {
+.calorie-calculater-block__tracker .calorie-calculater-block__calculater label {
   margin-right: 1rem;
 }
-.Carlorie-tracker .calorie-calculater input {
+.calorie-calculater-block__tracker .calorie-calculater-block__calculater input {
   margin-bottom: 2rem;
 }
-.Carlorie-tracker .calorie-calculater button {
+.calorie-calculater-block__tracker .calorie-calculater-block__calculater button {
   width: fit-content;
   align-self: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-.Carlorie-tracker .calorie-calculater select {
+.calorie-calculater-block__tracker .calorie-calculater-block__calculater select {
   padding: 0.5rem;
   background-color: #0d86ca;
   color: #ffffff;
   height: 5rem;
 }
-.Carlorie-tracker .calorie-calculater div {
+.calorie-calculater-block__tracker .calorie-calculater-block__calculater div {
   border: solid 0.3rem #0d86ca;
 }
-.Carlorie-tracker .calorie-calculater div p {
+.calorie-calculater-block__tracker .calorie-calculater-block__calculater div p {
   margin-top: 1rem;
   margin-bottom: 0;
 }
 
-.calorie-img {
+.calorie-calculater-block__img {
   background-image: url(/Img/training-g31cb64642_1920.jpg);
-  height: 100vh;
+  height: 100%;
 }
 
 /*membership-block*/
@@ -382,6 +386,23 @@ footer a:hover {
   .grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*Calorie-tracker-block*/
+@media screen and (max-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  input {
+    width: 60vw;
+  }
+
+  .calorie-calculater-block__img {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
   }
 }
 

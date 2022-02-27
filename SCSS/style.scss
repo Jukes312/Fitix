@@ -179,12 +179,16 @@
 /*Calorie-tracker-block*/
 .calorie-calculater-block {
   background-color: $Color-primary;
+  height: fit-content;
+  background-color: $Color-primary;
 }
-.Carlorie-tracker {
+.calorie-calculater-block__tracker {
   padding: 1rem;
-  .calorie-calculater {
+  overflow: hidden;
+  height: fit-content;
+  .calorie-calculater-block__calculater {
     text-align: center;
-    width: 50%;
+    width: 90%;
     padding: 7rem;
     margin: 0 auto;
     background-color: transparent(80%);
@@ -224,10 +228,10 @@
     }
   }
 }
-.calorie-img {
+.calorie-calculater-block__img {
   background-image: url(/Img/training-g31cb64642_1920.jpg);
 
-  height: 100vh;
+  height: 100%;
 }
 /*membership-block*/
 .membership-block {
