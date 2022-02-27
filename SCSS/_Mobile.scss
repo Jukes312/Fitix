@@ -43,7 +43,6 @@
 /*Nav-and-hero-block*/
 @media screen and (max-width: 700px) {
   .Nav-and-hero-block {
-    overflow: auto;
     .hero {
       overflow: auto;
       .hero__trasparent-block {
@@ -51,6 +50,9 @@
         overflow: auto;
         .hero__content {
           left: 10%;
+          h1 {
+            font-size: 6.5rem;
+          }
         }
       }
     }

@@ -164,11 +164,13 @@ h3 {
 
 /*Nav-and-hero-block*/
 .Nav-and-hero-block {
-  background-image: url("/Img/man-g4ed3e5c37_1920.jpg");
   overflow: hidden;
+  background-image: url("/Img/man-g4ed3e5c37_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
 }
 .Nav-and-hero-block .hero {
-  height: 100vh;
   overflow: hidden;
 }
 .Nav-and-hero-block .hero .hero__trasparent-block {
@@ -183,6 +185,7 @@ h3 {
   width: 80%;
   margin: auto;
   position: absolute;
+  background-color: rgba(15, 14, 14, 0.7);
   top: 25%;
   left: 15%;
   padding: 0 2rem;
@@ -328,9 +331,6 @@ footer a:hover {
 }
 /*Nav-and-hero-block*/
 @media screen and (max-width: 700px) {
-  .Nav-and-hero-block {
-    overflow: auto;
-  }
   .Nav-and-hero-block .hero {
     overflow: auto;
   }
@@ -340,6 +340,9 @@ footer a:hover {
   }
   .Nav-and-hero-block .hero .hero__trasparent-block .hero__content {
     left: 10%;
+  }
+  .Nav-and-hero-block .hero .hero__trasparent-block .hero__content h1 {
+    font-size: 6.5rem;
   }
 }
 

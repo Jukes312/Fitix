@@ -136,11 +136,13 @@
 
 /*Nav-and-hero-block*/
 .Nav-and-hero-block {
-  background-image: url("/Img/man-g4ed3e5c37_1920.jpg");
   overflow: hidden;
+  background-image: url("/Img/man-g4ed3e5c37_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
 
   .hero {
-    height: 100vh;
     overflow: hidden;
 
     .hero__trasparent-block {
@@ -155,6 +157,7 @@
         width: 80%;
         margin: auto;
         position: absolute;
+        background-color: transparent(70%);
         top: 25%;
         left: 15%;
         padding: 0 2rem;
