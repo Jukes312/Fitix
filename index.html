@@ -14,6 +14,143 @@
     />
   </head>
   <body>
+    <!--Nav-and-hero-block Start-->
+    <section class="Nav-and-hero-block">
+      <nav class="nav">
+        <a class="nav__logo" aria-label="Fitix" href="/"
+          ><img src="/Img/Logo.svg" alt=""
+        /></a>
+        <img class="nav__icon" id="menu-icon" src="/Img/menu.svg" alt="" />
+        <div class="nav__content">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Diet plans</a></li>
+            <li><a href="#">Exercises</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="hero__trasparent-block">
+          <div class="hero__content">
+            <h1>Health is wealth</h1>
+            <p>
+              All in one at Fitix, get the latest exercises, diets, workout
+              plans, track caliures etc.
+            </p>
+            <button class="btn">Check IT OUT</button>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Nav-and-hero-block Start-->
+    <!--Local-gym-block Start-->
+    <section class="Local-gym-block grid grid--1x2">
+      <div class="Local-gym-block__content">
+        <h2>FIND YOUR LOCAL GYM</h2>
+        <div class="input-group">
+          <input
+            id="address"
+            type="text"
+            class="input input-group-input"
+            placeholder="Search postcode..."
+          />
+          <button id="inputLocation">
+            <img src="/Img/Search.svg" alt="" />
+          </button>
+        </div>
+        <p>Or</p>
+        <button class="btn" id="myLocation">
+          <img class="loctation-icon" src="/Img/Location.svg" />
+          USE MY LOCATION
+        </button>
+      </div>
+      <div id="map"></div>
+    </section>
+    <!--Local-gym-block End-->
+    <!--Calorie-calculater-block Start-->
+    <section class="calorie-calculater-block grid grid--1x2">
+      <div class="calorie-calculater-block__tracker">
+        <div class="calorie-calculater-block__calculater">
+          <h3>Day calorie calculater</h3>
+          <label for="html">Age</label>
+          <br />
+          <input type="text" class="input" id="Age" placeholder="Age..." />
+          <br />
+          <label for="html">Height</label>
+          <br />
+          <input
+            type="text"
+            class="input"
+            id="Height"
+            placeholder="Heigh in cm..."
+          />
+          <br />
+          <label for="html">Weight</label>
+          <br />
+          <input
+            type="text"
+            class="input"
+            id="Weight"
+            placeholder="Weight in Kg..."
+          />
+          <br />
+          <label for="cars">Gender</label>
+          <select name="cars" id="Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <br />
+          <button class="btn" id="Btn-calc">Calculate</button>
+          <div>
+            <p>Daily Calorie intake:</p>
+            <p id="Day-calorie"></p>
+          </div>
+        </div>
+      </div>
+      <div class="calorie-calculater-block__img"></div>
+    </section>
+    <!--Calorie-calculater-block End-->
+    <!--Membership-block Start-->
+    <section class="membership-block">
+      <p>10% OFF</p>
+      <div class="membership-block__heading"><h4>MEMBERSHIP DISCOUNT</h4></div>
+      <button class="btn">CLICK HERE</button>
+    </section>
+    <!--Membership-block End-->
+    <!--Footer-block Start-->
+    <footer class="footer-block grid--1x4 grid">
+      <section class="footer-block__logo">
+        <img src="/Img/Logo-vertical.svg" alt="" />
+        <p>Copyright 2021 Jograj singh</p>
+      </section>
+      <section class="footer-block__content">
+        <h5>About us</h5>
+        <ul>
+          <li><a href="#"> About us </a></li>
+          <li><a href="#">Membership discount</a></li>
+        </ul>
+      </section>
+      <section class="footer-block__content">
+        <h5>Customer services</h5>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="">Contact us</a></li>
+        </ul>
+      </section>
+      <section class="footer-block__content">
+        <h5>Memberships</h5>
+        <ul>
+          <li><a href="">Gold membership</a></li>
+          <li><a href="">Silver membership</a></li>
+        </ul>
+      </section>
+    </footer>
+    <!--Footer-block Start-->
     <script type="module" src="/JS/main.js"></script>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRu-uSaJtJe1J2KPAvkYX6bHoMAYaVVks&libraries=places&callback=initMap"
+    ></script>
   </body>
 </html>
