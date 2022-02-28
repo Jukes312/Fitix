@@ -252,31 +252,37 @@
   }
 }
 /*Footer*/
-footer {
+.footer-block {
   padding: 5rem;
   background-color: $Color-primary;
 
-  .footer__logo {
+  .footer-block__logo {
     text-align: center;
     padding-right: 5rem;
-  }
-
-  h5 {
-    font-family: $font-heading;
-    font-size: 3.6rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-  }
-  ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-  }
-
-  a {
     color: gray;
     &:hover {
       color: $Color-secondery;
+    }
+  }
+  .footer-block__content {
+    margin-right: 1.5rem;
+    h5 {
+      font-family: $font-heading;
+      font-size: 3.6rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    a {
+      color: gray;
+      &:hover {
+        color: $Color-secondery;
+      }
     }
   }
 }
