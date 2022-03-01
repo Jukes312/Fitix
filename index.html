@@ -75,7 +75,13 @@
           <h3>Day calorie calculater</h3>
           <label for="html">Age</label>
           <br />
-          <input type="text" class="input" id="Age" placeholder="Age..." />
+          <input
+            type="text"
+            class="input"
+            id="Age"
+            placeholder="Age..."
+            required
+          />
           <br />
           <label for="html">Height</label>
           <br />
@@ -93,6 +99,7 @@
             class="input"
             id="Weight"
             placeholder="Weight in Kg..."
+            required
           />
           <br />
           <label for="cars">Gender</label>
@@ -101,6 +108,7 @@
             <option value="Female">Female</option>
           </select>
           <br />
+          <button class="btn" id="Btn-clear">Clear input</button>
           <button class="btn" id="Btn-calc">Calculate</button>
           <div>
             <p>Daily Calorie intake:</p>

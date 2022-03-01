@@ -36,9 +36,11 @@ export default class Mapp{
      
      inputGeoPlacesSearch(){
       /*Geolocation-to-covert-Address-input-into-Latlng*/
-         geocoder.geocode({'address': address.value}, function(result,status){
+        geocoder.geocode({'address': address.value}, function(result,status){
+        if (status == google.maps.places.PlacesServiceStatus.OK){  
          map.setCenter(result[0].geometry.location);
-         map.setZoom(13);
+         map.setZoom(13);}
+         else alert('Please type in the correct address or postcode')
      
      /*Many-places-to-find-gyms-close-by-input-Address*/
          let request = {
@@ -47,21 +49,21 @@ export default class Mapp{
              type: ['gym']
          };
         
-         service.nearbySearch(request, callback);
-     
-         function callback(results, status) {
+         service.nearbySearch(request, function callback(results, status) {
             
-             for(let i=0;i<results.length;i++){
-              window.marker = new google.maps.Marker({
-                  position: results[i].geometry.location,
-                  map: map,
-                  icon: './Img/Location-logo.svg',
-                });
-                google.maps.event.addListener(marker,'click',function(){
-                    console.log(results[i].name)
-                })
-             }
-          }
+            for(let i=0;i<results.length;i++){
+             window.marker = new google.maps.Marker({
+                 position: results[i].geometry.location,
+                 map: map,
+                 icon: './Img/Location-logo.svg',
+               });
+               google.maps.event.addListener(marker,'click',function(){
+                   console.log(results[i].name)
+               })
+            }
+         });
+     
+        
          });
      }
      
@@ -99,7 +101,7 @@ export default class Mapp{
              },
      
              ()=>{
-              console.log('Location not on ')
+              alert('Please chnage broswer settings to allow browser access you location')
              }
          )
      }

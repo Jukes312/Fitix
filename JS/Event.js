@@ -27,6 +27,10 @@ export class CalorieEvents extends CalorieCalc{
         this.buttonCalc.onclick = function(){
             cal.calcHim()
         }
+        this.clearbtn = document.getElementById('Btn-clear');
+        this.clearbtn.onclick = function(){
+            cal.clear()
+        }
     }
 }
 
