@@ -134,9 +134,31 @@ h3 {
 .Local-gym-block__content .btn {
   font-size: 2.5rem;
 }
+.Local-gym-block__content .gym-list {
+  height: 30rem;
+  overflow: auto;
+}
+.Local-gym-block__content .gym-list .gym-list__rating {
+  color: #0d86ca;
+}
+.Local-gym-block__content .gym-list__content {
+  display: flex;
+  border-bottom: 0.5rem solid;
+  border-color: white;
+}
+.Local-gym-block__content .gym-list__content .gym-list__heading {
+  margin-right: 2rem;
+  font-size: 2.5rem;
+}
+.Local-gym-block__content .gym-list__content .gym-list__name {
+  margin-right: 2rem;
+  font-size: 2.5rem;
+  color: #0d86ca;
+}
 
 #map {
   height: 100vh;
+  color: black;
 }
 
 /*Nav-block*/
@@ -235,6 +257,7 @@ h3 {
   align-self: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  margin-left: 1.5rem;
 }
 .calorie-calculater-block__tracker .calorie-calculater-block__calculater select {
   padding: 0.5rem;
@@ -354,14 +377,16 @@ h3 {
 /*Nav-and-hero-block*/
 @media screen and (max-width: 700px) {
   .Nav-and-hero-block .hero {
-    overflow: auto;
+    overflow: hidden;
   }
   .Nav-and-hero-block .hero .hero__trasparent-block {
     width: 100vw;
-    overflow: auto;
+    overflow: hidden;
   }
   .Nav-and-hero-block .hero .hero__trasparent-block .hero__content {
+    bottom: 15%;
     left: 10%;
+    overflow: hidden;
   }
   .Nav-and-hero-block .hero .hero__trasparent-block .hero__content h1 {
     font-size: 6.5rem;

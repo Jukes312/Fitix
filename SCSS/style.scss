@@ -103,10 +103,36 @@
   .btn {
     font-size: 2.5rem;
   }
+
+  .gym-list {
+    height: 30rem;
+
+    overflow: auto;
+    .gym-list__rating {
+      color: $Color-secondery;
+    }
+  }
+
+  .gym-list__content {
+    display: flex;
+    border-bottom: 0.5rem solid;
+    border-color: white;
+
+    .gym-list__heading {
+      margin-right: 2rem;
+      font-size: 2.5rem;
+    }
+    .gym-list__name {
+      margin-right: 2rem;
+      font-size: 2.5rem;
+      color: $Color-secondery;
+    }
+  }
 }
 
 #map {
   height: 100vh;
+  color: black;
 }
 
 /*Nav-block*/
@@ -212,6 +238,7 @@
       align-self: center;
       margin-top: 3rem;
       margin-bottom: 3rem;
+      margin-left: 1.5rem;
     }
     select {
       padding: 0.5rem;

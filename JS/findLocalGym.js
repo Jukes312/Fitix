@@ -3,6 +3,11 @@ export default class Mapp{
     this.geocoder;
     this.map;
     this.service;
+    this.marker;
+    this.infoWindow;
+    this.html = ``;
+    this.gymList = document.getElementById('gyms-info');
+    
     
     /*Initialization-of-Api-objects*/
       window.initMap =  function initMap(){
@@ -57,9 +62,10 @@ export default class Mapp{
                  map: map,
                  icon: './Img/Location-logo.svg',
                });
-               google.maps.event.addListener(marker,'click',function(){
-                   console.log(results[i].name)
-               })
+               window.infoWindow = new google.maps.InfoWindow({
+                content: results[i].name,
+                anchor: marker,map,
+              });
             }
          });
      
@@ -86,18 +92,39 @@ export default class Mapp{
                      type: ['gym']
                  };
                 
-                 service.nearbySearch(request, callback);
-             
-                 function callback(results, status) {
+                 service.nearbySearch(request, (results, status)=>{
+                   
                     
-                     for(let i=0;i<results.length;i++){
-                      window.marker = new google.maps.Marker({
-                          position: results[i].geometry.location,
-                          map: map,
-                          icon: './Img/Location-logo.svg',
-                        });
-                     }
-                  }
+                    for(let i=0;i<results.length;i++){
+                        this.marker = new google.maps.Marker({
+                         position: results[i].geometry.location,
+                         map: map,
+                         icon: './Img/Location-logo.svg',
+                       });
+
+                       this.infoWindow = new google.maps.InfoWindow({
+                           content: results[i].name,
+                           anchor: this.marker,map,
+                         });
+                         
+                        
+
+                         this.html += `<section class="gym-list__content">
+                         <p class="gym-list__heading">NAME:</p>
+                         <p class="gym-list__name">${results[i].name}</p></section>
+                         <p>RATING:</p>
+                         <p class="gym-list__rating">${results[i].rating}</p>`
+
+
+                         
+
+                     
+                    }
+
+                    this.gymList.innerHTML =  this.html;
+                 });
+             
+                 
              },
      
              ()=>{
