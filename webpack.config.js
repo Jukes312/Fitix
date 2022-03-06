@@ -13,6 +13,9 @@ module.exports = {
       clean: true,
       
     },
+    resolve: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
     
 
     //*Loaders*//
