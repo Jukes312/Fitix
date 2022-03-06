@@ -26,13 +26,17 @@ export default class Mapp{
     /*Click-Event*/
     
     inputSearch(){
+        this.html = ''
         let address = document.getElementById('address');
         this.inputGeoPlacesSearch();
     }
     
     buttonSearch(){
+        this.html = ''
         this.currentLocation();
     }
+
+
     
     /*Google-Maps-Api-intraction*/
      
@@ -75,6 +79,7 @@ export default class Mapp{
                          <p>RATING:</p>
                          <p class="gym-list__rating">${results[i].rating}</p>`
                     }
+                    this.gymList.innerHTML = ''
 
                     this.gymList.innerHTML =  this.html;
                  });

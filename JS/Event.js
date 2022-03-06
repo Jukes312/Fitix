@@ -1,14 +1,17 @@
+/*importing the parent classes(objects) to use for child class(click events) inheritance*/
 import Navv from '/JS/nav.js';
 let navv = new Navv();
 import Mapp from '/JS/findLocalGym.js';
 let mapp = new Mapp();
 import CalorieCalc from '/JS/calorieCalculater.js';
-
 let cal = new CalorieCalc();
+
+/*Exporting the child(click events) classes using inheritence to the main.js file*/
 
 export default class MappEvents extends Mapp{
 constructor(){
     super(Mapp)
+    
     this.buttonSearch = document.getElementById('myLocation')
     this.buttonSearch.onclick =  function(){
         mapp.buttonSearch()

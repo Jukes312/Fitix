@@ -8,7 +8,7 @@ export default class CalorieCalc{
         this.result;
         
     }
-
+/*Logic for the calorie calculater to make calculation based on the input with some error handling*/
     calcHim(){
         if (this.age.value === ''||this.height.value === ''||this.weight.value === ''){
             alert('Please fill in input')
@@ -31,7 +31,7 @@ export default class CalorieCalc{
         else this.html.innerHTML = `${Math.round(this.result)+' '+'Kcal'}`
     }}
     }
-
+/*Logic to clear the inputs with one click of a button*/
     clear(){
         this.age.value = '',
         this.height.value = '',
