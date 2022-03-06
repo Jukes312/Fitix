@@ -16,6 +16,9 @@
   background-color: $Color-secondery;
   color: $Color-body;
   font-size: 3rem;
+  &:hover {
+    filter: brightness(150%);
+  }
 }
 
 .btn {

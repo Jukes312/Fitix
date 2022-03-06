@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/CSS/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +18,7 @@
     <section class="Nav-and-hero-block">
       <nav class="nav">
         <a class="nav__logo" aria-label="Fitix" href="/"
-          ><img src="/Img/Logo.svg" alt=""
+          ><img src="<%=require('/Img/Logo.svg')%>" alt=""
         /></a>
         <img class="nav__icon" id="menu-icon" src="/Img/menu.svg" alt="" />
         <div class="nav__content">
@@ -56,12 +56,12 @@
             placeholder="Search postcode..."
           />
           <button id="inputLocation">
-            <img src="/Img/Search.svg" alt="" />
+            <img src="<%=require('/Img/Search.svg')%>" alt="" />
           </button>
         </div>
         <p>Or</p>
         <button class="btn" id="myLocation">
-          <img class="loctation-icon" src="/Img/Location.svg" />
+          <img class="loctation-icon" src="<%=require('/Img/Location.svg')%>" />
           USE MY LOCATION
         </button>
         <div class="gym-list" id="gyms-info"></div>
@@ -130,7 +130,7 @@
     <!--Footer-block Start-->
     <footer class="footer-block grid--1x4 grid">
       <section class="footer-block__logo">
-        <img src="/Img/Logo-vertical.svg" alt="" />
+        <img src="<%=require('/Img/Logo-vertical.svg')%>" alt="" />
         <p>Copyright 2021 Jograj singh</p>
       </section>
       <section class="footer-block__content">
@@ -156,7 +156,7 @@
       </section>
     </footer>
     <!--Footer-block Start-->
-    <script type="module" src="/JS/main.js"></script>
+
     <script
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRu-uSaJtJe1J2KPAvkYX6bHoMAYaVVks&libraries=places&callback=initMap"

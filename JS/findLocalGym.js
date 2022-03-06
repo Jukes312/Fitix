@@ -41,7 +41,7 @@ export default class Mapp{
      
      inputGeoPlacesSearch(){
       /*Geolocation-to-covert-Address-input-into-Latlng*/
-        geocoder.geocode({'address': address.value}, function(result,status){
+        geocoder.geocode({'address': address.value}, (result,status)=>{
         if (status == google.maps.places.PlacesServiceStatus.OK){  
          map.setCenter(result[0].geometry.location);
          map.setZoom(13);}
@@ -54,20 +54,30 @@ export default class Mapp{
              type: ['gym']
          };
         
-         service.nearbySearch(request, function callback(results, status) {
-            
-            for(let i=0;i<results.length;i++){
-             window.marker = new google.maps.Marker({
-                 position: results[i].geometry.location,
-                 map: map,
-                 icon: './Img/Location-logo.svg',
-               });
-               window.infoWindow = new google.maps.InfoWindow({
-                content: results[i].name,
-                anchor: marker,map,
-              });
-            }
-         });
+         service.nearbySearch(request, (results, status)=>{
+                   
+                    
+                    for(let i=0;i<results.length;i++){
+                        this.marker = new google.maps.Marker({
+                         position: results[i].geometry.location,
+                         map: map,
+                         icon: require('/Img/Location-logo.svg')
+                       });
+
+                       this.infoWindow = new google.maps.InfoWindow({
+                           content: results[i].name,
+                           anchor: this.marker,map,
+                         });
+                         
+                         this.html += `<section class="gym-list__content">
+                         <p class="gym-list__heading">NAME:</p>
+                         <p class="gym-list__name">${results[i].name}</p></section>
+                         <p>RATING:</p>
+                         <p class="gym-list__rating">${results[i].rating}</p>`
+                    }
+
+                    this.gymList.innerHTML =  this.html;
+                 });
      
         
          });
@@ -99,7 +109,7 @@ export default class Mapp{
                         this.marker = new google.maps.Marker({
                          position: results[i].geometry.location,
                          map: map,
-                         icon: './Img/Location-logo.svg',
+                         icon: require('/Img/Location-logo.svg')
                        });
 
                        this.infoWindow = new google.maps.InfoWindow({
