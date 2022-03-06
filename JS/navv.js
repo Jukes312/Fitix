@@ -1,6 +1,6 @@
-export default class Nav{
+export default class Navv{
     constructor(){
-        this.navContent = document.getElementsByClassName('nav__content')[0]
+        this.navContent = document.getElementsByClassName('nav__content')[0];
         
     }
     

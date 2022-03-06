@@ -1,5 +1,5 @@
-import Nav from '/Js/navv.js';
-let nav = new Nav();
+import Navv from '/Js/navv.js';
+let navv = new Navv();
 import Mapp from '/JS/findLocalGym.js';
 let mapp = new Mapp();
 import CalorieCalc from '/JS/calorieCalculater.js';
@@ -35,12 +35,12 @@ export class CalorieEvents extends CalorieCalc{
     }
 }
 
-export class NavEvents extends Nav{
+export class NavEvents extends Navv{
     constructor(){
-        super(Nav)
+        super(Navv)
         this.menuButton = document.getElementById('menu-icon');
         this.menuButton.onclick = function(){
-            nav.menuBtn()
+            navv.menuBtn()
         }
     }
 }
