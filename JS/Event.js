@@ -1,8 +1,8 @@
-import Mapp from '/JS/findLocalGym.js'
+import Mapp from '/JS/findLocalGym.js';
 let mapp = new Mapp();
 import CalorieCalc from '/JS/calorieCalculater.js';
 let cal = new CalorieCalc();
-import Nav from '/Js/nav.js'
+import Nav from '/Js/navv.js';
 let nav = new Nav();
 export default class MappEvents extends Mapp{
 constructor(){
