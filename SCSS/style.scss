@@ -279,6 +279,7 @@
     background-color: $Color-primary;
     box-shadow: 10px 10px white;
     color: $Color-body;
+    overflow: hidden;
   }
 }
 /*Footer*/
@@ -290,6 +291,7 @@
     text-align: center;
     padding-right: 5rem;
     color: gray;
+    transition: color 0.5s;
     &:hover {
       color: $Color-secondery;
     }
@@ -310,6 +312,7 @@
 
     a {
       color: gray;
+      transition: color 0.5s;
       &:hover {
         color: $Color-secondery;
       }

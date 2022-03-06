@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!--Nav-and-hero-block Start-->
@@ -51,7 +52,7 @@
     <!--Nav-and-hero-block Start-->
     <!--Local-gym-block Start-->
     <section class="Local-gym-block grid grid--1x2">
-      <div class="Local-gym-block__content">
+      <div data-aos="fade-right" class="Local-gym-block__content">
         <h2>FIND YOUR LOCAL GYM</h2>
         <div class="input-group">
           <input
@@ -77,7 +78,7 @@
     <!--Calorie-calculater-block Start-->
     <section class="calorie-calculater-block grid grid--1x2">
       <div class="calorie-calculater-block__tracker">
-        <div class="calorie-calculater-block__calculater">
+        <div data-aos="fade-up" class="calorie-calculater-block__calculater">
           <h3>Day calorie calculater</h3>
           <label for="html">Age</label>
           <br />
@@ -127,8 +128,10 @@
     <!--Calorie-calculater-block End-->
     <!--Membership-block Start-->
     <section class="membership-block">
-      <p>10% OFF</p>
-      <div class="membership-block__heading"><h4>MEMBERSHIP DISCOUNT</h4></div>
+      <p data-aos="fade-down">10% OFF</p>
+      <div class="membership-block__heading">
+        <h4 data-aos="fade-left">MEMBERSHIP DISCOUNT</h4>
+      </div>
       <button class="btn">CLICK HERE</button>
     </section>
     <!--Membership-block End-->
@@ -161,7 +164,10 @@
       </section>
     </footer>
     <!--Footer-block Start-->
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRu-uSaJtJe1J2KPAvkYX6bHoMAYaVVks&libraries=places&callback=initMap"
