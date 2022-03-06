@@ -1,9 +1,10 @@
+import Nav from '/Js/navv.js';
+let nav = new Nav();
 import Mapp from '/JS/findLocalGym.js';
 let mapp = new Mapp();
 import CalorieCalc from '/JS/calorieCalculater.js';
 let cal = new CalorieCalc();
-import Nav from '/Js/navv.js';
-let nav = new Nav();
+
 export default class MappEvents extends Mapp{
 constructor(){
     super(Mapp)
@@ -38,9 +39,9 @@ export class NavEvents extends Nav{
     constructor(){
         super(Nav)
         this.menuButton = document.getElementById('menu-icon');
-        this.menuButton.addEventListener('click',()=>{
+        this.menuButton.onclick = function(){
             nav.menuBtn()
-        })
+        }
     }
 }
 
