@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { mixin } = require('lodash');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     mode: 'development',
@@ -21,7 +22,7 @@ module.exports = {
     //*Loaders*//
     module:{
         rules:[
-            {test: /\.scss$/,use: ['style-loader', 'css-loader','sass-loader']},
+            {test: /\.scss$/,use:[{loader: MiniCssExtractPlugin.loader},'css-loader','sass-loader']},
             {test: /\.(png|jpg|gif|svg|eot|ttf|woff|ico)$/,   type: 'asset/resource'},
             {
                 test: /\.js$/,
@@ -45,7 +46,7 @@ module.exports = {
         template: './index.html'
         
     }
-    )],
+    ),new MiniCssExtractPlugin()],
 
     
     devtool: 'inline-source-map',
