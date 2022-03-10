@@ -27,7 +27,6 @@ export default class Mapp{
     
     inputSearch(){
         this.html = ''
-        let address = document.getElementById('address');
         this.inputGeoPlacesSearch();
     }
     
@@ -45,7 +44,7 @@ export default class Mapp{
      
      inputGeoPlacesSearch(){
       /*Geolocation-to-covert-Address-input-into-Latlng*/
-        geocoder.geocode({'address': address.value}, (result,status)=>{
+        geocoder.geocode({'address': document.getElementById('address').value}, (result,status)=>{
         if (status == google.maps.places.PlacesServiceStatus.OK){  
          map.setCenter(result[0].geometry.location);
          map.setZoom(13);}
@@ -64,7 +63,7 @@ export default class Mapp{
                     for(let i=0;i<results.length;i++){
                         this.marker = new google.maps.Marker({
                          position: results[i].geometry.location,
-                         map: map,
+                         map,
                          icon: require('/Img/Location-logo.svg')
                        });
 
@@ -79,7 +78,7 @@ export default class Mapp{
                          <p>RATING:</p>
                          <p class="gym-list__rating">${results[i].rating}</p>`
                     }
-                    this.gymList.innerHTML = ''
+                    
 
                     this.gymList.innerHTML =  this.html;
                  });
@@ -113,7 +112,7 @@ export default class Mapp{
                     for(let i=0;i<results.length;i++){
                         this.marker = new google.maps.Marker({
                          position: results[i].geometry.location,
-                         map: map,
+                         map,
                          icon: require('/Img/Location-logo.svg')
                        });
 

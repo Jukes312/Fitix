@@ -30,11 +30,11 @@ export class CalorieEvents extends CalorieCalc{
         super(CalorieCalc)
         this.buttonCalc = document.getElementById('Btn-calc');
         this.buttonCalc.onclick = function(){
-            cal.calcHim()
+            cal.calcCalorie()
         }
         this.clearbtn = document.getElementById('Btn-clear');
         this.clearbtn.onclick = function(){
-            cal.clear()
+            cal.clearInput()
         }
     }
 }
